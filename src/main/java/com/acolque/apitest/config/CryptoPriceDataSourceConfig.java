@@ -21,13 +21,13 @@ public class CryptoPriceDataSourceConfig {
         return new CryptoPriceCoinGeckoApi(restTemplate);
     }
 
-    @Bean(CRYPTO_PRICE_MONGO_DB_SOURCE)
-    public CryptoPriceDataSource getCryptoPriceMongoDBSource() {
-        return new CryptoPriceMongoDB();
-    }
-
-    @Bean(CRYPTO_PRICE_MY_SQL_SOURCE)
-    public CryptoPriceDataSource getCryptoPriceMySqlSource(PricesRepository pricesRepository) {
-        return new CryptoPriceMySQL(pricesRepository);
-    }
+//    @Bean(CRYPTO_PRICE_MONGO_DB_SOURCE)
+//    public CryptoPriceDataSource getCryptoPriceMongoDBSource() {
+//        return new CryptoPriceMongoDB();
+//    }
+//
+//    @Bean(CRYPTO_PRICE_MY_SQL_SOURCE)
+//    public CryptoPriceDataSource getCryptoPriceMySqlSource(PricesRepository pricesRepository) {
+//        return new CryptoPriceMySQL(pricesRepository);
+//    }
 }
